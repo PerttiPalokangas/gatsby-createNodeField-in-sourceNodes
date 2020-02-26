@@ -69,7 +69,7 @@ exports.sourceNodes = ({getNodes, actions}) => {
 
   markdownNodes.forEach(n => {
     actions.createNodeField({
-       n,
+       node: n,
        name: 'git',
        value: 'This is git info'
     })
